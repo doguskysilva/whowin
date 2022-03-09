@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('competitions', function (Blueprint $table) {
             $table->id();
+            $table->uuid('public_id');
             $table->string('name');
             $table->boolean('is_active');
             $table->string('sport');
